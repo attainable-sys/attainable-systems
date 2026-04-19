@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attainable Systems — Management & Strategy Consulting</title>
+  <meta name="description" content="Attainable Systems provides management and strategy consulting services. We help organizations build systems that work.">
+  <style>
+    :root {
+      --color-bg: #fafaf9;
+      --color-text: #1c1917;
+      --color-muted: #57534e;
+      --color-accent: #0c4a6e;
+      --color-accent-light: #e0f2fe;
+      --color-border: #d6d3d1;
+      --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      --font-serif: Georgia, 'Times New Roman', serif;
+      --max-w: 720px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      border-bottom: 1px solid var(--color-border);
+      padding: 1.5rem 2rem;
+    }
+
+    header .inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+
+    nav a {
+      color: var(--color-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-left: 1.5rem;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--color-accent); }
+
+    main {
+      flex: 1;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 2.25rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 1.5rem;
+      color: var(--color-accent);
+    }
+
+    .intro {
+      font-size: 1.125rem;
+      color: var(--color-muted);
+      margin-bottom: 3rem;
+      max-width: 600px;
+    }
+
+    .consultants {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .consultants { grid-template-columns: 1fr; }
+    }
+
+    .card {
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 2rem;
+      background: white;
+      transition: box-shadow 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .card h2 {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: var(--color-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .card a {
+      color: var(--color-accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .card a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--color-border);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      color: var(--color-muted);
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <a href="/" class="logo">Attainable Systems</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#consultants">Consultants</a>
+        <a href="mailto:park@attainable.systems">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Systems that work,<br>built by people who do.</h1>
+    <p class="intro">
+      Attainable Systems is a management and strategy consulting practice.
+      We help organizations design processes, align teams, and build
+      operational systems that deliver results without unnecessary complexity.
+    </p>
+
+    <section id="about">
+      <p style="margin-bottom: 2rem; color: var(--color-muted);">
+        We believe that the best systems are the ones people actually use.
+        Our consultants bring hands-on experience in operations, strategy,
+        and organizational design to help you get from where you are to
+        where you need to be — practically and sustainably.
+      </p>
+    </section>
+
+    <section id="consultants">
+      <h2 style="font-family: var(--font-serif); font-size: 1.1rem; color: var(--color-muted); margin-bottom: 1rem;">Our Consultants</h2>
+      <div class="consultants">
+        <div class="card">
+          <h2>Park Feierbach</h2>
+          <p>Strategy &amp; operations consulting. Helping teams build systems
+             that scale without losing what makes them effective.</p>
+          <a href="https://park.attainable.systems">View profile &rarr;</a>
+        </div>
+        <div class="card">
+          <h2>Rachael Foo</h2>
+          <p>Management consulting with a focus on organizational alignment
+             and process improvement.</p>
+          <a href="https://rachael.attainable.systems">View profile &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Attainable Systems. All rights reserved.
+  </footer>
+</body>
+</html>
